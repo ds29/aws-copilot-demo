@@ -1,0 +1,26 @@
+services:
+  balancer:
+    build:
+      context: ./nginx
+    depends_on:
+      - marketing
+      - frontend
+      - api
+    ports:
+      - 80:80
+
+  marketing:
+    build:
+      context: ./marketing
+    ports:
+      - 3002:3002
+  api:
+    build:
+      context: ./app/api
+    ports:
+      - 3000:3000
+  frontend:
+    build:
+      context: ./app/frontend
+    ports:
+      - 3001:3001
