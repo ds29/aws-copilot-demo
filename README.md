@@ -9,7 +9,7 @@ In the diagram below, you can see the basic architecture and how the application
 
 ![Application Layout](structure.png)
 
-To achieve this infrastructure, you can use the following steps to implement using your own domain. _Replace `example.test` with your own domain of course.
+To achieve this infrastructure, you can use the following steps to implement using your own domain. _Replace `example.test` with your own domain of course._
 
 1. `copilot app init --domain example.test`
 2. `copilot env init` - Create a `test` environment
